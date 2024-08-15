@@ -1,1 +1,1 @@
-# Bluestock-Fintech
+# Bluestock Fintech
