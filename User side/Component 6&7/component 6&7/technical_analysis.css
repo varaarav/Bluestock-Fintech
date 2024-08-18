@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color:#fff;
+    color: #333;
+    flex-wrap: wrap;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.company-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links ul li {
+    margin: 0;
+}
+
+.nav-links ul li a {
+    color:black;
+    text-decoration: none;
+    font-size: 16px;
+}
+.news{
+    background-color: #0d2ad1;
+    padding: 3px;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.auth-buttons a {
+    color:gray;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.sign-in {
+    background-color: transparent;
+    /* border: 1px solid #007bff; */
+    color: black;
+}
+
+.sign-up {
+    background-color: #007bff;
+    border: none;
+}
+
+/* Breadcrumb Styles */
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    font-size: 16px;
+}
+
+.breadcrumb-link {
+    color: #333;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.breadcrumb-separator {
+    margin-right: 5px;
+    color: #333;
+}
+
+.breadcrumb-current {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.technical-analysis-section {
+    background-color: #e0e0e0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.section-title {
+    color: #333;
+    font-size: 30px;
+    flex-grow: 1;
+    margin-top: -100px;
+}
+
+.logo-box {
+    background-color: #ffc0cb;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    margin-right: 50px;
+}
+.cards-section {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    gap: 20px;
+    /* justify-content: space-evenly; */
+    padding: 20px;
+    background-color: #fff;
+}
+
+.card {
+    background-color: #fff;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:nth-child(1) {
+    border-color: #ff9800 #00bcd4; /* Orange and Sky Blue */
+}
+
+.card:nth-child(2) {
+    border-color: #4caf50 #f44336; /* Green and Red */
+}
+
+.card:nth-child(3) {
+    border-color: #3f51b5 #ffeb3b; /* Indigo and Yellow */
+}
+
+.card-logo {
+    width: 200px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.card-name {
+    color: #333;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.card-text {
+    color: #555;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.card-border {
+    border: 0;
+    border-top: 2px solid #00bcd4; /* Sky Blue Border */
+    margin: 20px 0;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.views {
+    display: flex;
+    align-items: center;
+}
+
+.views-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.views-count {
+    font-size: 14px;
+    color: #333;
+}
+
+.view-details {
+    display: flex;
+    align-items: center;
+}
+
+.view-details-text {
+    color: #007bff;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.view-details-symbol {
+    color: #ff9800; /* Orange Color */
+}
+
+/* 
+.logo-in-box {
+    width: 80px;
+    height: 80px;
+} */
+
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo-container {
+        margin-bottom: 10px;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .auth-buttons {
+        width: 100%;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .auth-buttons a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .breadcrumb {
+        font-size: 14px;
+        flex-wrap: wrap;
+    }
+    .technical-analysis-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo-box {
+        margin-top: 20px;
+        width: 100%;
+        max-width: 150px;
+    }
+    .cards-section {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+    
+}
